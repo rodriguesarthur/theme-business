@@ -1,0 +1,162 @@
+/********** DECLARANDO VARIAVEIS **********/
+/*********** CRIANDO FONTES ***********/
+@font-face {
+  font-family: 'DroidSerif';
+  src: url("../fonts/DroidSerif.ttf");
+  font-size: 1em; }
+/*********** ESTILO DA PAGINA ***********/
+/*********** HEADER ***********/
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #252323;
+  padding-top: 20px; }
+  header h1 {
+    color: #00bac6;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-family: 'DroidSerif'; }
+  header #menu-top ul li a {
+    cursor: pointer;
+    color: #fff; }
+    header #menu-top ul li a:hover {
+      color: #00bac6; }
+
+/*********** HEADER ***********/
+/*********** SECTION ***********/
+section {
+  /************ BANNER ************/
+  /************ ABOUT ************/
+  /************ WORKS ************/ }
+  section #banner {
+    width: 100%;
+    height: 100%; }
+    section #banner .banner-1 {
+      width: 100%;
+      height: 500px;
+      background: url("../images/banner1.jpg") no-repeat;
+      background-size: cover; }
+    section #banner .banner-2 {
+      width: 100%;
+      height: 500px;
+      background: url("../images/banner2.jpg") no-repeat;
+      background-size: cover; }
+    section #banner .banner-3 {
+      width: 100%;
+      height: 500px;
+      background: url("../images/banner3.jpg") no-repeat;
+      background-size: cover; }
+  section #about {
+    width: 100%;
+    height: 100%;
+    padding-top: 80px; }
+    section #about h1 {
+      text-transform: uppercase;
+      font-size: 2em;
+      color: #ADADAD;
+      margin-bottom: 20px; }
+      section #about h1 span {
+        color: #000;
+        font-weight: bold; }
+    section #about p.subtitle {
+      color: #ADADAD;
+      margin-bottom: 100px; }
+    section #about .images {
+      margin-bottom: 80px; }
+      section #about .images h2 {
+        color: #000;
+        margin-bottom: 20px;
+        font-size: 1.5em; }
+      section #about .images img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px; }
+      section #about .images p {
+        padding: 0 20px;
+        color: #ADADAD;
+        margin-bottom: 30px; }
+  section #works {
+    width: 100%;
+    height: 100%;
+    padding-top: 80px; }
+    section #works h1 {
+      margin-top: 60px;
+      margin-bottom: 20px; }
+    section #works p {
+      color: #ADADAD; }
+    section #works img {
+      width: 400px;
+      height: 400px; }
+    section #works hr {
+      margin-top: 80px;
+      margin-bottom: 80px; }
+  section #contact {
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    background-color: #404040; }
+    section #contact h1 {
+      color: #fff;
+      margin-bottom: 20px; }
+    section #contact p {
+      color: #ADADAD;
+      margin-bottom: 100px; }
+    section #contact .form-control {
+      margin-bottom: 20px; }
+    section #contact .btn-send {
+      background-color: #00bac6;
+      color: #fff; }
+    section #contact .row {
+      margin-bottom: 50px; }
+    section #contact iframe {
+      margin-left: 20px;
+      border-radius: 10px; }
+
+/*********** SECTION ***********/
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #252323; }
+  footer p {
+    color: #ADADAD;
+    margin-top: 10px; }
+  footer .list-social {
+    margin-top: 5px; }
+    footer .list-social li {
+      margin-right: 30px; }
+      footer .list-social li a {
+        color: #ADADAD;
+        font-size: 1.5em; }
+        footer .list-social li a:hover {
+          color: #00bac6; }
+
+/*********** FOOTER ***********/
+/*********** RESPONSIVO ***********/
+@media only screen and (max-width: 768px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 50px;
+    padding: 5px; }
+    header #menu-top ul {
+      display: none; }
+
+  section #about .col-md {
+    margin-bottom: 50px; }
+  section #works img {
+    width: 90%;
+    height: 100%; }
+  section #works hr {
+    margin-top: 60px;
+    margin-bottom: 20px; }
+  section #contact iframe {
+    width: 90%;
+    height: 300px; }
+
+  footer .container ul {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/********** DECLARANDO VARIAVEIS **********/ 
+$color-menu: #252323;
+$color-contact: #404040;
+$title: #00bac6;
+$cinza: #ADADAD;
+$preto: #000;
+
+/*********** CRIANDO FONTES ***********/
+@font-face {
+	font-family: 'DroidSerif';
+	src: url('../fonts/DroidSerif.ttf');
+	font-size: 1em;
+}
+
+/*********** ESTILO DA PAGINA ***********/
+
+/*********** HEADER ***********/
+header{
+	width: 100%;
+	height: 80px;
+	background-color: $color-menu;
+	padding-top: 20px;
+
+	h1{
+		color: $title;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		margin-top: 5px;
+		font-family: 'DroidSerif';
+	}
+
+	#menu-top ul{	li{	a{cursor: pointer; color: #fff;&:hover{color: $title;};}}}
+
+}
+/*********** HEADER ***********/
+
+/*********** SECTION ***********/
+section{
+
+	#banner{
+		width: 100%;
+		height: 100%;
+
+		.banner-1{
+			width: 100%;
+			height: 500px;
+			background: url('../images/banner1.jpg') no-repeat;
+			background-size: cover;
+
+		}
+		.banner-2{
+			width: 100%;
+			height: 500px;
+			background: url('../images/banner2.jpg') no-repeat;
+			background-size: cover;
+		}
+		.banner-3{
+			width: 100%;
+			height: 500px;
+			background: url('../images/banner3.jpg') no-repeat;
+			background-size: cover;
+		}
+	} /************ BANNER ************/
+
+	#about{
+		width: 100%;
+		height: 100%;
+		padding-top: 80px;		
+		h1{
+			text-transform: uppercase;
+			font-size: 2em;
+			color: $cinza;
+			margin-bottom: 20px;
+			span{
+				color: $preto;
+				font-weight: bold;
+			}
+		}
+		p.subtitle{
+			color: $cinza;
+			margin-bottom: 100px;
+		}
+
+		.images{
+			margin-bottom: 80px;
+			h2{
+				color: $preto;
+				margin-bottom: 20px;
+				font-size: 1.5em;
+			}
+
+			img{
+				width: 150px;
+				height: 150px;
+				margin-bottom: 20px;
+			}
+
+			p{
+				padding: 0 20px;
+				color: $cinza;
+				margin-bottom: 30px;
+			}
+		}
+	} /************ ABOUT ************/
+
+	#works {
+		width: 100%;
+		height: 100%;
+		padding-top: 80px;
+
+		h1{
+			margin-top: 60px;
+			margin-bottom: 20px;
+		}
+
+		p{
+			color: $cinza;
+		}
+
+		img{
+			width: 400px;
+			height: 400px;
+		}
+
+		hr{
+			margin-top: 80px;
+			margin-bottom: 80px;
+		}
+	} /************ WORKS ************/
+
+	#contact {
+		width: 100%;
+		height: 100%;
+		padding-top: 80px;
+		background-color: $color-contact;
+
+		h1{
+			color: #fff;
+			margin-bottom: 20px;
+		}
+		p{
+			color: $cinza;
+			margin-bottom: 100px;
+		}
+
+		.form-control{
+			margin-bottom: 20px;
+		}
+
+		.btn-send {
+			background-color: $title;
+			color: #fff;
+		}
+
+		.row {
+			margin-bottom: 50px;
+		}
+
+		iframe {
+			margin-left: 20px;
+			border-radius: 10px;
+		}
+	}
+
+}
+/*********** SECTION ***********/
+
+footer{
+	width: 100%;
+	height: 50px;
+	background-color: $color-menu;
+
+	p{
+		color: $cinza;
+		margin-top: 10px;
+	}
+
+	.list-social {
+		margin-top: 5px;
+		li {
+			margin-right: 30px;
+			a{
+				color: $cinza;
+				font-size: 1.5em;
+				&:hover{color: $title;}
+			}
+		}
+	}
+}
+/*********** FOOTER ***********/
+
+/*********** RESPONSIVO ***********/
+@media only screen and(max-width: 768px){
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		height: 50px;
+		padding: 5px;
+		#menu-top {
+			ul{display: none;}
+		}
+	}
+
+	section {
+		#about{
+			.col-md{
+				margin-bottom: 50px;
+			}
+		}
+
+		#works{
+			img{
+				width: 90%;
+				height: 100%;
+			}
+
+			hr{
+				margin-top: 60px;
+				margin-bottom: 20px;
+			}
+		}
+
+		#contact{
+			iframe{
+				width: 90%;
+				height: 300px;
+			}
+		}
+	}
+
+	footer{
+		.container {
+			ul{display: none;}
+		}
+	}
+}
